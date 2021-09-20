@@ -35,3 +35,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 Added apollo-client & graphql
+
+https://www.apollographql.com/blog/apollo-client/next-js/next-js-getting-started/
