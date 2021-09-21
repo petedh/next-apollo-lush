@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { gql } from "@apollo/client";
-import client from "../apollo-client";
+import { gql } from "@apollo/client"
+import client from "../apollo-client"
 
 export default function Home({ products }) {
-  debugger
   return (
     <div className={styles.container}>
       <Head>
@@ -14,26 +13,30 @@ export default function Home({ products }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <header className={styles.header}>
+        <p>
+          <b>Free UK delivery over £45</b> <a href="https://www.lush.com/uk/en/faq/delivery-information" target="_self" >Learn more</a>  |  <b>Pay in 3 with Klarna</b> <a href="https://www.lush.com/uk/en/a/klarna-frequently-asked-questions" target="_self" >Learn more</a>
+        </p>
+      </header>
       <main className={styles.main}>
-        {products.map((product) => (
-            <div key={product.node.id} >
-                <h2>{product.node.name}</h2>
-                <Image src={product.node.thumbnail.url} title={product.node.seoTitle} alt={product.node.seoTitle} width={255} height={255} />
-            </div>
-          ))}
+      <div className={styles.gridContainer}>
+          {products.map((product) => (
+              <a key={product.node.id} href={`/product/${product.node.slug}`} className={styles.productTile}>
+                  <Image src={product.node.thumbnail.url} title={product.node.seoTitle} alt={product.node.seoTitle} width={255} height={255} />
+                  <h2 className={styles.productTitle}>{product.node.name}</h2>
+              </a>
+            ))}
+        </div>   
       </main>
 
+
+      <div className={styles.waveHolder}>
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" className={styles.wave}>
+        <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" ></path>
+      </svg>
+    </div>
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+        <p>Copyright © 1995–2021 Lush Retail Ltd.</p>
       </footer>
     </div>
   )
@@ -43,7 +46,7 @@ export async function getServerSideProps() {
   const { data } = await client.query({
     query: gql`
       query Products {
-        products(channel: "uk", first: 10) {
+        products(channel: "uk", first: 12) {
           edges {
             cursor
             node {
@@ -52,22 +55,6 @@ export async function getServerSideProps() {
               slug
               seoTitle
               thumbnail{url}
-              pricing {
-                priceRange {
-                  start {
-                    gross {
-                      amount
-                      currency
-                    }
-                  }
-                  stop {
-                    gross {
-                      amount
-                      currency
-                    }
-                  }
-                }
-              }
             }
           }
         }
