@@ -1,13 +1,13 @@
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2.5rem ;
+  gap: 2.5rem;
   grid-auto-flow: row;
 }
 
 @media (min-width: 700px) {
   .gridContainer {
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -24,11 +24,12 @@
 }
 
 .productTile {
-  background-color: rgb(244, 242, 244); 
+  background-color: rgb(244, 242, 244);
   padding: 1rem;
 }
 
 .productTitle {
-  font-family: handwritten, hn-display, HelveticaNeue, Helvetica, helvetica, sans-serif;
+  font-family: handwritten, hn-display, HelveticaNeue, Helvetica, helvetica,
+    sans-serif;
   text-align: center;
 }
