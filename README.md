@@ -59,4 +59,4 @@ yarn test:cu
 ```
 
 
-Any questions please [mailto:peterdavidhenry@gmail.com](email me!)
+Any questions please [email me!](mailto:peterdavidhenry@gmail.com)
