@@ -3,6 +3,8 @@ module.exports = {
     '**/*.{js,jsx,ts,tsx}',
     '!**/*.d.ts',
     '!**/node_modules/**',
+    '!**jest.config.js',
+    '!**/pages/**',
   ],
   moduleNameMapper: {
     // Handle CSS imports (with CSS modules)

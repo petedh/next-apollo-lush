@@ -18,22 +18,28 @@ export default function Home({ products }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.gridContainer}>
-        {products.map((product) => (
-          <a
-            key={product.node.id}
-            href={`/product/${product.node.slug}`}
-            className={styles.productTile}
-          >
-            <Image
-              src={product.node.thumbnail.url}
-              title={product.node.seoTitle}
-              alt={product.node.seoTitle}
-              width={255}
-              height={255}
-            />
-            <h2 className={styles.productTitle}>{product.node.name}</h2>
-          </a>
-        ))}
+        {products.map(
+          ({
+            node: {
+              id,
+              name,
+              slug,
+              seoTitle,
+              thumbnail: { url },
+            },
+          }) => (
+            <a key={id} href={`/pdp/${slug}`} className={styles.productTile}>
+              <Image
+                src={url}
+                title={seoTitle}
+                alt={seoTitle}
+                width={255}
+                height={255}
+              />
+              <h2 className={styles.productTitle}>{name}</h2>
+            </a>
+          )
+        )}
       </div>
     </>
   )

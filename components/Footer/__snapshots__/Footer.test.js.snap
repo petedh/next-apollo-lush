@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Footer unchanged 1`] = `
+<footer
+  className="footer"
+>
+  <div
+    className="waveHolder"
+  >
+    <svg
+      className="wave"
+      preserveAspectRatio="none"
+      viewBox="0 0 500 150"
+    >
+      <path
+        d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"
+      />
+    </svg>
+  </div>
+  <p>
+    Copyright © 1995–2021 Lush Retail Ltd.
+  </p>
+</footer>
+`;

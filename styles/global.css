@@ -35,6 +35,10 @@ body {
   font-family: hn-display, HelveticaNeue, Helvetica, helvetica, sans-serif;
 }
 
+html {
+  background-color: black;
+}
+
 /* reset */
 * {
   -webkit-box-sizing: border-box;
@@ -51,7 +55,7 @@ body {
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgb(0, 0, 0);
 }
 
 body {
@@ -89,4 +93,5 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
 }

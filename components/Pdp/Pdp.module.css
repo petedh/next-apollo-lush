@@ -1,0 +1,53 @@
+@value small, med from "../../styles/breakpoints.module.css";
+
+.pdp {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  grid-auto-flow: row;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.detailsHead {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media small {
+  .pdp {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .hero img {
+    margin-left: -100px;
+  }
+}
+
+@media med {
+  .detailsHead {
+    margin: 50px;
+  }
+}
+
+.details h1 {
+  font-family: handwritten, hn-display, HelveticaNeue, Helvetica, helvetica,
+    sans-serif;
+  font-size: 3rem;
+}
+
+.details b {
+  font-family: handwritten, hn-display, HelveticaNeue, Helvetica, helvetica,
+    sans-serif;
+  font-size: 1.8rem;
+  margin-top: 25px;
+  display: block;
+}
+
+.details s {
+  color: rgb(19, 134, 69);
+  text-decoration: none;
+}

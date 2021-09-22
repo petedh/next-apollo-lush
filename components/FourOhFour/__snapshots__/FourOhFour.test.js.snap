@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders FourOhFour unchanged 1`] = `
+<div
+  data-testid="is-FourOhFour"
+>
+  <img
+    alt="404 image"
+    height={200}
+    src="https://res.cloudinary.com/lush/image/upload/f_auto,q_auto/v1542208897/lush_com/site_assets/404-Moving.gif"
+    width={400}
+  />
+  <h3>
+    Not Found
+  </h3>
+  <p>
+    Sorry, we can't find the page you are looking for…
+  </p>
+</div>
+`;

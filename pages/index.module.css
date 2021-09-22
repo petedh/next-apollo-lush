@@ -1,3 +1,5 @@
+@value small, med, large from "../styles/breakpoints.module.css";
+
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr;
@@ -5,19 +7,19 @@
   grid-auto-flow: row;
 }
 
-@media (min-width: 700px) {
+@media small {
   .gridContainer {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: 1050px) {
+@media med {
   .gridContainer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media (min-width: 1400px) {
+@media large {
   .gridContainer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

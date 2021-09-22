@@ -1,40 +1,57 @@
+import styles from './Pdp.module.css'
 import parse from 'html-react-parser'
-import Image from 'next/image'
+import FourOhFour from '../FourOhFour/FourOhFour'
 
-const Pdp = ({ product }) => {
+const Pdp = ({
+  product,
+  product: {
+    description,
+    media,
+    seoTitle,
+    name,
+    thumbnail: { url },
+    pricing: {
+      priceRange: {
+        start: { gross },
+      },
+    },
+  },
+}) => {
   if (product) {
-    const description = JSON.parse(product.description)
+    const descMarkup = JSON.parse(description)
     return (
-      <main>
-        <div>
-          <h2>{product.name}</h2>
-          <h3>Price: </h3>
-          <Image
-            src={product.thumbnail.url}
-            title={product.seoTitle}
-            alt={product.seoTitle}
-            width={255}
-            height={255}
-          ></Image>
-          {description.blocks.map((block) => (
-            <div key={product.id}>{parse(block.data.text)}</div>
-          ))}
+      <>
+        <div className={styles.pdp}>
+          <div className={styles.hero}>
+            <img
+              src={!!media[1] ? media[1].url : media[0].url}
+              title={seoTitle}
+              alt={seoTitle}
+              width={1000}
+              height={1000}
+            />
+          </div>
+          <div className={styles.details}>
+            <div className={styles.detailsHead}>
+              <img
+                src={url}
+                title={seoTitle}
+                alt={seoTitle}
+                width={255}
+                height={255}
+              />
+              <h1>{name}</h1>
+              <h2>Price: £{gross.amount.toFixed(2)}</h2>
+            </div>
+            {descMarkup.blocks.map((block, index) => (
+              <div key={`desc desc-${index}`}>{parse(block.data.text)}</div>
+            ))}
+          </div>
         </div>
-      </main>
+      </>
     )
   } else {
-    return (
-      <div>
-        <Image
-          alt="404 image"
-          src="https://res.cloudinary.com/lush/image/upload/f_auto,q_auto/v1542208897/lush_com/site_assets/404-Moving.gif"
-          width={400}
-          height={200}
-        ></Image>
-        <h3>Not Found</h3>
-        <p>Sorry, we can&apos;t find the page you are looking for…</p>
-      </div>
-    )
+    return <FourOhFour />
   }
 }
 export default Pdp
