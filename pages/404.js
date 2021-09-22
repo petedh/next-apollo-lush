@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import FourOhFour from '@/components/FourOhFour/FourOhFour'
+import FourOhFour from '../components/FourOhFour/FourOhFour'
 
 export default function Home() {
   return (

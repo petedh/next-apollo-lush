@@ -4,105 +4,118 @@ exports[`PDP renders Pdp unchanged 1`] = `
 <div
   className="pdp"
 >
-  <img
-    alt="7 to 3 Cleansing Wipe"
-    height={255}
-    src="https://twstg2.eu.saleor.cloud/media/__sized__/products/7_to_3_cleansing_wipe_2020-thumbnail-255x255.png"
-    title="7 to 3 Cleansing Wipe"
-    width={255}
-  />
-  <h1>
-    7 to 3
-  </h1>
-  <h2>
-    Price: 
-  </h2>
-  <img
-    alt="7 to 3 Cleansing Wipe"
-    height={1000}
-    src="https://twstg2.eu.saleor.cloud/media/__sized__/products/7_to_3_cleansing_wipe_2020-thumbnail-255x255.png"
-    title="7 to 3 Cleansing Wipe"
-    width={1000}
-  />
-  <div>
-    If you’re looking for biodegradable face wipes, look no further! The convenience of a face wipe meets the luxury of 9 To 5 cream cleanser, with none of the waste. This reusable, biodegradable cleanser and makeup remover feels gentle, while it works hard to clean, balance and clarify your skin.
+  <div
+    className="hero"
+  >
+    <img
+      alt="7 to 3 Cleansing Wipe"
+      height={1000}
+      src="https://twstg2.eu.saleor.cloud/media/products/12_days_of_christmas_gift_hero_image_2020_01.jpg"
+      title="7 to 3 Cleansing Wipe"
+      width={1000}
+    />
   </div>
-  <div />
-  <div>
-    <b>
-      Benefits:
-    </b>
-  </div>
-  <div>
-    - Fresh dove orchid infusion is gently yet deeply cleansing on the skin.
-  </div>
-  <div>
-    - Carrageenan extract is used to thicken and stabilise the product while providing moisture to your skin.
-  </div>
-  <div>
-    - Ylang ylang oil adds a floral heady scent and balances skin.
-  </div>
-  <div>
-    - This biodegradable face wipe combines convenience with a conscience. Packaging free and great for travel, this cleanser helps to save unnecessary waste ending up in landfill (or the oceans!).
-  </div>
-  <div />
-  <div>
-    <b>
-      How to use: 
-    </b>
-  </div>
-  <div>
-    Simply splash your face with water, wet one side of the pad, and glide over your face to activate a light cleansing cream that can be gently worked into the skin and rinsed away. Remove light eye makeup by sweeping the wet cleansing wipe over your eyelids and rinsing away to gently rub away mascara. Cleansing complete, you can then finish your routine as usual.
-  </div>
-  <div>
-    Follow with other soothing products such as Angels on Bare Skin fresh cleanser and Celestial facial moisturiser to complete your soothing and softening skincare routine.
-  </div>
-  <div />
-  <div>
-    <b>
-      How to store: 
-    </b>
-  </div>
-  <div>
-    Store and transport in a soap dish or Lush tin. Keep in a cool and dry place to use again and again.
-  </div>
-  <div />
-  <div>
-    <b>
-      List of ingredients
-    </b>
-  </div>
-  <div />
-  <div>
-    <s>
-      Fresh Dove Orchid Infusion (Dendrobium), Talc, Glycerine, 
-    </s>
-    Sodium Lauroyl Sarcosinate, Propylene Glycol, 
-    <s>
-      Ground Cannellini Beans (Phaseolus vulgaris), Carrageenan Extract (Chondrus crispus), Everlasting Flower Absolute (Helichrysum italicum), Ylang Ylang Oil (Cananga odorata), 
-    </s>
-    Alpha-Isomethyl ionone, Amyl Cinnamal, Benzyl Alcohol, 
-    <s>
-      *Benzyl Benzoate,
-    </s>
-     Butylphenyl Methylpropional, Cinnamyl Alcohol, Citronellol, Geraniol, Hydroxycitronellal, 
-    <s>
-      *Linalool,
-    </s>
-     Perfume
-  </div>
-  <div />
-  <div>
-    <s>
-       •  Natural Ingredients
-    </s>
-  </div>
-  <div>
-     •  Safe Synthetics
-  </div>
-  <div />
-  <div>
-    *occurs naturally in essential oils.
+  <div
+    className="details"
+  >
+    <div
+      className="detailsHead"
+    >
+      <img
+        alt="7 to 3 Cleansing Wipe"
+        height={255}
+        src="https://twstg2.eu.saleor.cloud/media/__sized__/products/7_to_3_cleansing_wipe_2020-thumbnail-255x255.png"
+        title="7 to 3 Cleansing Wipe"
+        width={255}
+      />
+      <h1>
+        7 to 3
+      </h1>
+      <h2>
+        Price: £
+        2.00
+      </h2>
+    </div>
+    <div>
+      If you’re looking for biodegradable face wipes, look no further! The convenience of a face wipe meets the luxury of 9 To 5 cream cleanser, with none of the waste. This reusable, biodegradable cleanser and makeup remover feels gentle, while it works hard to clean, balance and clarify your skin.
+    </div>
+    <div />
+    <div>
+      <b>
+        Benefits:
+      </b>
+    </div>
+    <div>
+      - Fresh dove orchid infusion is gently yet deeply cleansing on the skin.
+    </div>
+    <div>
+      - Carrageenan extract is used to thicken and stabilise the product while providing moisture to your skin.
+    </div>
+    <div>
+      - Ylang ylang oil adds a floral heady scent and balances skin.
+    </div>
+    <div>
+      - This biodegradable face wipe combines convenience with a conscience. Packaging free and great for travel, this cleanser helps to save unnecessary waste ending up in landfill (or the oceans!).
+    </div>
+    <div />
+    <div>
+      <b>
+        How to use: 
+      </b>
+    </div>
+    <div>
+      Simply splash your face with water, wet one side of the pad, and glide over your face to activate a light cleansing cream that can be gently worked into the skin and rinsed away. Remove light eye makeup by sweeping the wet cleansing wipe over your eyelids and rinsing away to gently rub away mascara. Cleansing complete, you can then finish your routine as usual.
+    </div>
+    <div>
+      Follow with other soothing products such as Angels on Bare Skin fresh cleanser and Celestial facial moisturiser to complete your soothing and softening skincare routine.
+    </div>
+    <div />
+    <div>
+      <b>
+        How to store: 
+      </b>
+    </div>
+    <div>
+      Store and transport in a soap dish or Lush tin. Keep in a cool and dry place to use again and again.
+    </div>
+    <div />
+    <div>
+      <b>
+        List of ingredients
+      </b>
+    </div>
+    <div />
+    <div>
+      <s>
+        Fresh Dove Orchid Infusion (Dendrobium), Talc, Glycerine, 
+      </s>
+      Sodium Lauroyl Sarcosinate, Propylene Glycol, 
+      <s>
+        Ground Cannellini Beans (Phaseolus vulgaris), Carrageenan Extract (Chondrus crispus), Everlasting Flower Absolute (Helichrysum italicum), Ylang Ylang Oil (Cananga odorata), 
+      </s>
+      Alpha-Isomethyl ionone, Amyl Cinnamal, Benzyl Alcohol, 
+      <s>
+        *Benzyl Benzoate,
+      </s>
+       Butylphenyl Methylpropional, Cinnamyl Alcohol, Citronellol, Geraniol, Hydroxycitronellal, 
+      <s>
+        *Linalool,
+      </s>
+       Perfume
+    </div>
+    <div />
+    <div>
+      <s>
+         •  Natural Ingredients
+      </s>
+    </div>
+    <div>
+       •  Safe Synthetics
+    </div>
+    <div />
+    <div>
+      *occurs naturally in essential oils.
+    </div>
   </div>
 </div>
 `;

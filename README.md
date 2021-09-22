@@ -1,38 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next/apollo LUSH poc
 
-## Getting Started
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) (CRA).
 
-First, run the development server:
+## Getting up and running
+
+First, run install:
 
 ```bash
-npm run dev
-# or
+yarn
+```
+
+Then, run the development server:
+
+```bash
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the _amazing_ results.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Linting and formating
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+To get everything looking uniformly formatted [prettier](https://www.npmjs.com/package/prettier) and to play nice with Eslint [eslint plugin prettier](https://www.npmjs.com/package/eslint-plugin-prettier), which is bootstrapped with CRA.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Data access
 
-## Learn More
+Both [apollo-client](https://www.npmjs.com/package/@apollo/client) & [graphql](https://www.npmjs.com/package/graphql) were added to help with statically rendering pages with data from your [Sandboxed staging GraphQL playground](https://twstg2.eu.saleor.cloud/graphql/).
 
-To learn more about Next.js, take a look at the following resources:
+### Rendering
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To render the description fields from the above [https://www.npmjs.com/package/html-react-parser](html react parser) was installed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### CSS
 
-## Deploy on Vercel
+Again css modules is bootstrapped with CRA allowing easy local scoping, to keep things DRY and share break points [https://www.npmjs.com/package/postcss-modules-values](postcss modules values) was installed.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Testing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Not really my strong point but to get the components snap shotted and test for null data [https://www.npmjs.com/package/jest](jest) as a test runner and [https://www.npmjs.com/package/react-test-renderer](react test renderer), with more time I would have implemented unit and integration testing with https://www.npmjs.com/package/@testing-library/react](React testing library)....
 
-Added apollo-client & graphql
+### Other commands
 
-https://www.apollographql.com/blog/apollo-client/next-js/next-js-getting-started/
+```bash
+yarn dev
+```
+
+Get's the dev server running with node debugging enabled for server side rendering code.
+
+```bash
+yarn format
+```
+
+Runs prettier "prettier --write ." with hard overwrites and save, safer not to use TBH and set up format on save in your IDE.
+
+```bash
+yarn test
+```
+
+Runs Jest with a watch so test rerun on code and test saves.
+
+```bash
+yarn test:cu
+```
+
+Runs the above but also updates snapshots and runs the coverage report.
+
+Any questions please [mailto:peterdavidhenry@gmail.com](email me!)

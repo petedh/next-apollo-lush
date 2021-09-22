@@ -23,18 +23,18 @@ export default function Home({ products }) {
             node: {
               id,
               name,
-              slug,
               seoTitle,
+              slug,
               thumbnail: { url },
             },
           }) => (
             <a key={id} href={`/pdp/${slug}`} className={styles.productTile}>
               <Image
+                alt={seoTitle}
+                height={255}
                 src={url}
                 title={seoTitle}
-                alt={seoTitle}
                 width={255}
-                height={255}
               />
               <h2 className={styles.productTitle}>{name}</h2>
             </a>
@@ -55,8 +55,8 @@ export async function getServerSideProps() {
             node {
               id
               name
-              slug
               seoTitle
+              slug
               thumbnail {
                 url
               }

@@ -27,16 +27,11 @@ export async function getServerSideProps(context) {
     query: gql`
         query Products {
             product(channel: "uk", slug: "${slug}" ) {
-              id
-              name
-              seoTitle
-              thumbnail {
-                url
-              }
+              description
               media {
                 url
               }
-              description
+              name
               pricing {
                 priceRange {
                   start {
@@ -46,10 +41,20 @@ export async function getServerSideProps(context) {
                   }
                 }
               }
+              seoTitle
+              thumbnail {
+                url
+              }
             }
         }
         `,
   })
+
+  if (!data.product) {
+    return {
+      notFound: true,
+    }
+  }
 
   return {
     props: {

@@ -4,7 +4,11 @@ module.exports = {
     '!**/*.d.ts',
     '!**/node_modules/**',
     '!**jest.config.js',
+    '!**next.config.js',
+    '!**apollo-client.js',
     '!**/pages/**',
+    '!**/.next/**',
+    '!**/coverage/**',
   ],
   moduleNameMapper: {
     // Handle CSS imports (with CSS modules)
