@@ -40,23 +40,28 @@ Not really my strong point but to get the components snap shotted and test for n
 
 ### Other commands
 
-
 Get the dev server running with node debugging enabled for development of server side rendering code.
+
 ```bash
 yarn dev
 ```
+
 Runs prettier "prettier --write ." with hard overwrites and save, safer not to use TBH and set up format on save in your IDE, like I did in VS Code.
+
 ```bash
 yarn format
 ```
+
 Runs Jest with a watch so test rerun on code and test file saves.
+
 ```bash
 yarn test
 ```
+
 Runs the previous command but adds flags to update snapshots and run coverage report.
+
 ```bash
 yarn test:cu
 ```
-
 
 Any questions please [email me!](mailto:peterdavidhenry@gmail.com)

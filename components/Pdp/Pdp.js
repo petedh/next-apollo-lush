@@ -21,7 +21,8 @@ const Pdp = (product) => {
       },
     } = product
     const descMarkup = JSON.parse(description)
-    const heroImg = media.length > 0 ? media[1].url : media[0].url
+    debugger
+    const heroImg = media.length > 1 ? media[1].url : media[0].url
     return (
       <>
         <div className={styles.pdp}>
